@@ -2,6 +2,10 @@
 
 Dieses Addon fügt in der Bearbeiten-Ansicht von Artikeln und Kategorien einen neuen Reiter hinzu, um News aus dem Add-on "Neues" hinzuzufügen und zu bearbeiten - wenn diese einem Artikel zugeordnet sind.
 
+![image](https://github.com/user-attachments/assets/fd338839-ec31-44e9-9f71-32458dea8d2d)
+
+![image](https://github.com/user-attachments/assets/1a2c0786-0d1d-448a-818c-324e3942a4b8)
+
 ## Features
 
 * Anzeige von News aus dem Add-on "Neues" in der Bearbeiten-Ansicht von Artikeln und Kategorien
