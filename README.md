@@ -9,6 +9,10 @@ Dieses Addon fügt in der Bearbeiten-Ansicht von Artikeln und Kategorien einen n
 * WIP: Löschen von News
 * WIP: Berechtigungen: Nur Personen, die berechtigt sind, den Artikel oder die Kategorie zu bearbeiten, können auch die News bearbeiten
 
+## Installation
+
+Dem Add-on liegt derzeit ein Feld `be_link_current` bei, das unter dem Feldnamen `neues_structure_article_id` in der Tabelle `rex_neues_entry` hinzugefügt werden muss. Dieses Feld wird benötigt, um die Zuordnung von News zu Artikeln zu speichern.
+
 ## Lizenz
 
 AddOn, siehe [LICENSE](https://github.com/FriendsOfREDAXO/neues_structure/blob/main/LICENCE)
