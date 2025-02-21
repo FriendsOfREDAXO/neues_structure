@@ -6,14 +6,13 @@ class rex_yform_value_be_link_current extends rex_yform_value_be_link
     {
         // prüfe, ob rex_backend_page "content" ist
         $content = rex_be_controller::getCurrentPagePart() && rex_be_controller::getCurrentPagePart()[0] == "content";
-        if(rex_article::getCurrentId() && $content) {
+        if (rex_article::getCurrentId() && $content) {
             $this->setValue(rex_article::getCurrentId());
             $this->params['value_pool']['email'][$this->getName()] = $this->getValue();
             if ($this->saveInDB()) {
                 $this->params['value_pool']['sql'][$this->getName()] = $this->getValue();
             }
-        }
-        else {
+        } else {
             parent::enterObject();
         }
     }

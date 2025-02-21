@@ -4,7 +4,7 @@ use FriendsOfRedaxo\NeuesStructure\Entry;
 
 $neues_entry_id = rex_get('neues_entry_id', 'int', null);
 
-if($neues_entry_id !== null) {
+if ($neues_entry_id !== null) {
     $fragment = new rex_fragment();
     $fragment->setVar('neues_entry_id', $neues_entry_id);
     return $fragment->parse('neues_structure/edit.php');

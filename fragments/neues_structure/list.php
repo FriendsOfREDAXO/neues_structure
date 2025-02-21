@@ -29,12 +29,12 @@ $backend_url = rex_url::backendPage('content/neues_structure', [
         if ($entries->count() === 0) {
             echo $this->parse('neues_structure/list.no-entry.php');
         } else {
-        foreach ($entries as $entry) {
-            $this->setVar('entry', $entry);
-            echo $this->parse('neues_structure/list.entry.php');
+            foreach ($entries as $entry) {
+                $this->setVar('entry', $entry);
+                echo $this->parse('neues_structure/list.entry.php');
+            }
         }
-}
-        ?>
+?>
     </tbody>
 </table>
 </div>
