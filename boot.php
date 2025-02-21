@@ -8,7 +8,6 @@ use rex_addon;
 use rex_be_controller;
 use rex_yform_manager_dataset;
 
-
 if (rex_addon::get('yform')->isAvailable() && !rex::isSafeMode()) {
     rex_yform_manager_dataset::setModelClass(
         'rex_neues_entry',
@@ -19,7 +18,7 @@ if (rex_addon::get('yform')->isAvailable() && !rex::isSafeMode()) {
 
 
 if (\rex::isBackend()) {
-if(rex_be_controller::getCurrentPagePart() && rex_be_controller::getCurrentPagePart()[0] == "content") {    
-                Entry::addContentTab();
+    if (rex_be_controller::getCurrentPagePart() && rex_be_controller::getCurrentPagePart()[0] == "content") {
+        Entry::addContentTab();
     }
 }

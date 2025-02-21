@@ -25,19 +25,19 @@ $context = new rex_context([
 ]);
 
 $entry = Entry::query()->where('id', $neues_entry_id)->findOne();
-if($entry === null) {
+if ($entry === null) {
     $entry = Entry::create();
 }
 
 $yform = $entry->getForm();
-$yform->setObjectparams('form_action', rex_url::backendController(['page' => 'content/neues_structure', 'category_id' => $category_id, 'article_id' => $articleId, 'clang' => $clang_id, 'ctype' => $ctype_id, 'neues_entry_id' =>$neues_entry_id], false));
+$yform->setObjectparams('form_action', rex_url::backendController(['page' => 'content/neues_structure', 'category_id' => $category_id, 'article_id' => $articleId, 'clang' => $clang_id, 'ctype' => $ctype_id, 'neues_entry_id' => $neues_entry_id], false));
 $yform->setObjectparams('form_id', 'neues_structure');
 $yform->setObjectparams('form_name', 'neues_structure');
 $yform->setObjectparams('real_field_names', true);
 
 $yform->setObjectparams('form_showformafterupdate', 1);
 
-if($entry->exists() === true) {
+if ($entry->exists() === true) {
     $yform->setObjectparams('main_table', $entry->getTablename());
     $yform->setObjectparams('main_id', $entry->getId());
     $yform->setObjectparams('main_where', 'id = ' . $neues_entry_id);
@@ -53,5 +53,3 @@ $fragment->setVar('title', rex_i18n::msg('neues_structure.edit.title'), false);
 $fragment->setVar('body', $yform->getForm(), false);
 
 echo $fragment->parse('core/page/section.php');
-
-?>
