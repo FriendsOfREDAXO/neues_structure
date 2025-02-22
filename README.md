@@ -1,6 +1,6 @@
 # Neues in der Struktur für REDAXO 5.x und Neues 6.x
 
-Dieses Addon fügt in der Bearbeiten-Ansicht von Artikeln und Kategorien einen neuen Reiter hinzu, um News aus dem Add-on "Neues" hinzuzufügen und zu bearbeiten - wenn diese einem Artikel zugeordnet sind.
+Dieses Addon fügt in der Bearbeiten-Ansicht von Artikeln und Kategorien einen neuen Reiter hinzu, um News aus dem Add-on "Neues" hinzuzufügen und zu bearbeiten - wenn diese einem Artikel zugeordnet sind. **Dadurch können REDAXO-Benutzerrollen beim Bearbeiten berücksichtigt werden und der Zugriff darauf eingeschränkt werden!**
 
 ![image](https://github.com/user-attachments/assets/fd338839-ec31-44e9-9f71-32458dea8d2d)
 
