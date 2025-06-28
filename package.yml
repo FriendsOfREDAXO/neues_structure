@@ -1,15 +1,15 @@
 package: neues_structure
-version: '6.0.0-dev-2025-22-02'
+version: '6.0.0-dev-2025-28-06'
 author: 'Friends Of REDAXO'
 supportpage: https://github.com/FriendsOfREDAXO/neues_structure
 
 
 requires:
     php:
-        version: '>8.1,<9'
+        version: '>=8.3,<9'
     redaxo: ^5.18
     packages:
-        yform: "^4"
+        yform: ">=4,<6"
         neues: ">=6.0.0"
 
 installer_ignore:
