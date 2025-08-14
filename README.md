@@ -19,7 +19,7 @@ Dem Add-on liegt derzeit ein Feld `be_link_current` bei, das unter dem Feldnamen
 
 ## Lizenz
 
-AddOn, siehe [LICENSE](https://github.com/FriendsOfREDAXO/neues_structure/blob/main/LICENCE)
+AddOn, siehe [LICENSE](https://github.com/FriendsOfREDAXO/neues_structure/blob/main/LICENSE)
 
 ## Autor
 
